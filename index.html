@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>UCD | Workshop form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		.frosted-glass {
+			background: inherit;
+			position: relative;
+			z-index: 1;
+			overflow: hidden;
+			margin: 0 auto;
+			box-sizing: border-box;
+			box-shadow: inset 0 1em 1em rgba(0, 0, 0, .9);
+		}
+
+		.frosted-glass::before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: inherit;
+			box-shadow: inset 200px 2000px 3000px rgba(255, 255, 255, .2);
+			filter: blur(10px);
+			margin: -20px;
+		}
+
+		#a {
+			animation-name: ring;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			transform-origin: center;
+
+		}
+
+		@keyframes ring {
+			from {
+				transform: rotatez(0deg);
+			}
+
+			to {
+				transform: rotatez(360deg);
+			}
+		}
+
+		.centered {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.container {
+			position: relative;
+			text-align: center;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="container-contact100" style="background-image: url('images/b1.png');
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;">
+
+		<div class=" col-lg-6 col-md-12">
+			<div class="wrap-contact100 ">
+				<form class="contact100-form validate-form" autocomplete="off" id="contactForm" action="aa.php" method="post">
+					<span class="contact100-form-title">
+						<center>
+							<div>
+								<div class="container">
+
+									<img id="a" src="11.png" width="300px" class="img-fluid">
+									<div class="centered">
+										<img src="22.png" style="z-index:11;" width="250px">
+									</div>
+								</div>
+							</div>
+							<br> UCD Workshop Registration form
+						</center>
+					</span>
+
+					<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+						<span class="label-input100">Tell us your name *</span>
+						<input type="text" name="name" placeholder="Enter your name" id="name" pattern="[a-zA-Z .]{5,}" required>
+					</div>
+
+					<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<span class="label-input100">Branch *</span>
+						<input type="text" name="branch" id="branch" placeholder="Enter your Branch" required>
+					</div>
+					<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+						<span class="label-input100">Year *</span>
+						<input type="text" name="year" id="year" placeholder="Enter your Year" pattern="[1234]" required>
+					</div>
+					<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<span class="label-input100">Enter your email *</span>
+						<input type="text" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@(gmail|ymail|yahoo|hotmail|outlook|googlemail|mac)+\.(com|co.in|in|org|net)$" required>
+					</div>
+					<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<span class="label-input100"> Whatsapp Phone no. *</span>
+						<input type="text" placeholder="+91-xxxxx-xxxxx" name="phoneno" id="phoneno" pattern="[7-9]{1}[0-9]{9}" required>
+					</div>
+					<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<span class="label-input100">SAP ID. *</span>
+						<input type="text" name="sapid" id="sapid" placeholder="xxxxxxxxx" pattern="[0-9]{9}" required>
+					</div>
+
+
+					<div class="container-aa1">
+						<div class="wrap-aa1">
+							<div class="contact00-form-bgbtn"></div>
+							<button class="aa1" name="submit" type="submit" value="Submit">
+								Submit
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<span class="contact100-more">
+				&copy; 2019-2020 UCD Workshop Registration form .<br> Design by
+				UCD Technical committee.
+
+		</div>
+		</span>
+	</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
